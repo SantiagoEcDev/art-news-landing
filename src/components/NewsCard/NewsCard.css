@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.news-card{
+    width: 311px;
+    height: 619px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    margin-top: 50px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.news-card-image-container{
+    width: 311px;
+    height: 352px;
+}
+.news-card-info{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    padding: 20px;
+}
+.news-card-date{
+    color: #B7B7B7;
+    font-size: 0.8125rem;
+    font-weight: 500;
+}
+.news-card-title{
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.news-card-callToAction{
+    color: #D9852C;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 6px;
+    font-weight: 600;
+}
