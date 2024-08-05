@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.header-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+  align-items: center;
+  position: relative; /* Ensure the positioning context is set */
+}
+
+.header-nav-menu-icon {
+  font-size: 50px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  position: relative; /* Ensure this icon is positioned relative */
+  z-index: 1000; /* Make sure the menu icon is above other elements */
+}
+
+.header-nav-menu-list {
+  display: none; /* Ocultar el menú por defecto */
+}
+
+.header-nav-menu-list.open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.575);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  gap: 30px;
+  list-style: none;
+  z-index: 999; /* Ensure this is behind the menu icon */
+}
+body.no-scroll {
+    overflow: hidden; /* Oculta las barras de desplazamiento */
+  }
+
+.header-nav-menu-list-links {
+  color: white;
+  text-decoration: none;
+}
+
+.getStarted {
+  padding: 8px 14px;
+  border: 1px solid white;
+  border-radius: 12px;
+}
+
+@media (min-width: 960px) {
+  .header-nav-menu-icon {
+    display: none;
+  }
+
+  .header-nav-menu-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 35px;
+  }
+
+  .header-nav-menu-list-links {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .header-nav-menu-list-links:hover {
+    color: rgb(226, 225, 225);
+  }
+
+  .getStarted {
+    padding: 8px 20px;
+    border: 2px solid white;
+    border-radius: 12px;
+  }
+
+  .getStarted:hover {
+    background: white;
+    color: rgba(0, 0, 0, 0.521);
+  }
+}

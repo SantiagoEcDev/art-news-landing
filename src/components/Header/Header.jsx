@@ -1,17 +1,10 @@
 import "./Header.css";
-import LogoArtjunks from "./Logo-Artjunks.png";
-import HamburguerMenu from "./HamburgerMenu.png";
+
+import { Navbar } from "../Navbar/Navbar";
 export const Header = () => {
   return (
     <header className="header">
-      <nav className="header-nav">
-        <a href="#">
-          <img src={LogoArtjunks} alt="" />
-        </a>
-        <a href="#">
-          <img src={HamburguerMenu} alt="" />
-        </a>
-      </nav>
+      <Navbar/>
 
       <div className="header-info-section">
       <div className="header-ornament"></div>

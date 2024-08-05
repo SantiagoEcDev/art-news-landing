@@ -5,11 +5,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: start;
     padding: 30px;
     font-family: "Inter",sans-serif;
     margin-top: 50px;
 }
 .news-section-container-title{
     font-weight: bold;
-    font-size: 1.3889rem;;
+    font-size: 1.3889rem;
+    font-family: "Inter",sans-serif;
+}
+
+@media (min-width: 480px) and (max-width: 960px) {
+    .news-section-containe{
+        font-size: 3.888rem;
+        font-weight: 400;
+    }
 }
