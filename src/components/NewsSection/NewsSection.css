@@ -16,9 +16,11 @@
     font-family: "Inter",sans-serif;
 }
 
-@media (min-width: 480px) and (max-width: 960px) {
-    .news-section-containe{
-        font-size: 3.888rem;
-        font-weight: 400;
+@media (min-width: 480px){
+    .cards-section{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
     }
 }
